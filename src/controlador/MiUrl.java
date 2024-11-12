@@ -19,7 +19,7 @@ public class MiUrl {
 
 
 public void MiDireccion(String direccion){
-     try {
+    try {
             URL url = new URL(direccion);
             URI uri = url.toURI();
             Desktop.getDesktop().browse(uri);

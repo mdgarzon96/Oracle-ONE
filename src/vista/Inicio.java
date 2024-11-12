@@ -23,7 +23,7 @@ public class Inicio extends javax.swing.JFrame {
 
     public Inicio() {
         initComponents();
-         setIconImage(getIconImage());
+        setIconImage(getIconImage());
     }
 
     @SuppressWarnings("unchecked")
@@ -262,21 +262,21 @@ public class Inicio extends javax.swing.JFrame {
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
-     @Override
+    @Override
     public Image getIconImage() {
         Image retValue = Toolkit.getDefaultToolkit().getImage(ClassLoader.getSystemResource("imagenes/style=bulk.png"));
         return retValue;
     }
     
     private void txtCantidadImporteKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtCantidadImporteKeyTyped
-         tipoCaracter.numberKeyPress(evt);
+        tipoCaracter.numberKeyPress(evt);
         if (txtCantidadImporte.getText().length() > 20) {
             evt.consume();
         }
     }//GEN-LAST:event_txtCantidadImporteKeyTyped
 
     private void txtCantidadImporteKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtCantidadImporteKeyReleased
-         if (txtCantidadImporte.getText().isEmpty()) {
+        if (txtCantidadImporte.getText().isEmpty()) {
             txtResultadoDivisa.setText("");
         }
     }//GEN-LAST:event_txtCantidadImporteKeyReleased
